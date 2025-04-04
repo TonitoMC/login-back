@@ -12,7 +12,7 @@ import (
 
 func main() {
 	// Conectar a la base de datos
-	db, err := setupDatabase("/home/Tono/users.db")
+	db, err := setupDatabase("./users.db")
 	if err != nil {
 		log.Fatal("CRITICAL: No se pudo conectar a la base de datos:", err)
 	}
